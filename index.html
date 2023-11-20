@@ -1,0 +1,31 @@
+<!-- Defines the document type -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Sets the title of the webpage -->
+    <title>RNN Letter Prediction</title>
+    <!-- Links the CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Wraps the input field, button, and result display -->
+    <div>
+        <h1 id="tronHeading">RNN Letter Prediction</h1>
+        <!-- Input field for the user to enter text -->
+        <input type="text" id="textInput" placeholder="Enter text">
+        <!-- Button to trigger the prediction -->
+        <button id="predictButton">Predict Next Letter RNN [TensorFlow]</button>
+        <button id="predictButtonNaive">Predict Next Letter RNN [Naive]</button>
+
+        <!-- Div to display the result -->
+        <div id="result"></div>
+        <!-- Div to display the result from the self-built model -->
+        <div id="resultSelfBuilt"></div>
+    </div>
+
+    <!-- Imports TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Links the JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

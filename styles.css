@@ -1,0 +1,40 @@
+body {
+    background-color: #000000;
+    font-family: 'Orbitron', sans-serif; /* A futuristic font */
+    color: #00ff00; /* Neon green text */
+}
+
+input, button {
+    background-color: #000000;
+    border: 2px solid #00ff00; /* Neon green border */
+    color: #00ff00; /* Neon green text */
+    font-family: 'Orbitron', sans-serif; /* A futuristic font */
+}
+
+button {
+    padding: 10px;
+}
+
+#result, #resultSelfBuilt {
+    border: 2px solid #00ff00; /* Neon green border */
+    padding: 10px;
+    color: #00ff00; /* Neon green text */
+    white-space: pre-wrap; /* Ensures that the text wraps */
+    overflow-x: auto; /* Adds a scrollbar if the content overflows */
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+#tronHeading {
+    font-size: 3em;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    animation: wave 2s infinite;
+}
